@@ -1,0 +1,200 @@
+=== cert
+PASS distinct 14-bit rows (N=372)
+PASS word<->walk injectivity: real-bit projection injective on rows
+PASS C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=0
+PASS state triples counted (1125, 1800)
+PASS live rows identical in both states 346
+PASS score is null exactly on the blocking rows
+PASS score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+PASS row/head types (18, 162)
+PASS thresholds: one integer per head type
+PASS state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=47
+PASS state 2: all head-type triples satisfy sum l >= 25 triples=656 extreme=26
+INFO head-type triples per state {1: 353, 2: 656}
+INFO 0<=l<=u<=24 sanity (not needed for soundness): False
+PASS seed z is Lu Thm 1.1 bound 2.229206468135675727981404 (an input from Lu, not proved here)
+PASS (A.1) witness s: s^251 < H252(251/22)
+PASS (A.1) witness v: v^640 < H641(640/D)
+PASS (A.1) witness p,q: p^137 q^6 < H144(137x+6y)
+PASS (A.1) witness p,q: p^9 q^718/U0^3 < H182(3R0+178y)
+PASS node_rates: all five (eta_b, B_b) equal exact recomputation from Appendix C tables and Table 2 floors
+PASS node_rates: exactly b in {144,182,183,252,641}, all eta_b, B_b > 0
+PASS positivity hypotheses: z > 1, s, v, p, q > 0, hence D, N, x, U0, R0 > 0
+PASS positivity hypotheses: t > 1, f > 0, S >= 1 integer
+P0 [[4778216525144985247216290819, 7623349455532804759796625026], [4478368884499615675574422075, 7156744770125268616038786645]]
+P1 [[4517309766121419277340665189, 7208481351757102823475428960], [4229760403489795822743755810, 6760791623241699284819199320]]
+P2 [[4754180198998588307915837069, 7584803584563070207222853225], [4456418681788042455951861800, 7121476598548471600707278067]]
+PASS P0 entries strictly positive (K0 strictly positive)
+PASS J <= rho(P0)  (2J <= a+d or p(J) <= 0)
+PASS rho(P0) < J+1 (2(J+1) > a+d and p(J+1) > 0)
+PASS tail P1 (K-): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.193024, rho(tail)/S<=1.127363 (float, informational)
+PASS tail P2 (K+): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.193024, rho(tail)/S<=1.187096 (float, informational)
+PASS Lambda >= f (J/S)^(1/DD) > target = 22295934693/10000000000 (2.229593469300)
+PASS target > Lu seed/bound 2.229206468135675727981404
+INFO max certified u/1e14 grid value: 222959346936825/10^14 = 2.22959346936825; J = 11930241765638048075487820293
+RESULT PASS
+PASS C1 0
+PASS word<->walk injectivity (real-bit projection injective)
+PASS 1350 triples/state (unordered) {1: 1125, 2: 1800}
+PASS 330 live rows both states
+PASS null score <=> blocking
+PASS score conservation
+PASS 18 types/162 heads
+PASS 468 head triples/state {1: 353, 2: 656}
+PASS thresholds (3.2) (47, 26)
+PASS l,u integers (0<=l<=u<=24 not required)
+PASS node_rates = exact recomputation from Lu App.C tables (rates.py) and Table 2
+PASS prices A.1 + positivity (z>1,s,v,p,q>0,t>1,f>0,S>=1,eta,B>0) [True, True, True, True]
+PASS rounding exact: P0<=exact
+PASS rounding exact: P1>=exact
+PASS rounding exact: P2>=exact
+PASS P0>0
+PASS J<=rho(P0)
+PASS tails<J [True, True]
+PASS final target
+J=11930241765638048075487820293
+RESULT PASS
+n 372 distinct True C1 violations 0 T1,T2 1125 1800 live 346 346 live equal True
+score violations 0 e in 0..2 True real-bit injective True
+types 18 heads 162
+head-type triples/state 353 656
+max sum u (s=1) 47 (need<=47)  min sum l (s=2) 26 (need>=25)
+prices True P0>0 True J 11930241765638048075487820293 floor ok True tails True True final True
+best grid 222959346936825 /1e14 = 2.22959346936825
+VERDICT PASS
+J 11930241765638048075487820293
+=== cert2
+PASS distinct 14-bit rows (N=372)
+PASS word<->walk injectivity: real-bit projection injective on rows
+PASS C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=0
+PASS state triples counted (1125, 1800)
+PASS live rows identical in both states 346
+PASS score is null exactly on the blocking rows
+PASS score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+PASS row/head types (18, 162)
+PASS thresholds: one integer per head type
+PASS state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=47
+PASS state 2: all head-type triples satisfy sum l >= 25 triples=656 extreme=26
+INFO head-type triples per state {1: 353, 2: 656}
+INFO 0<=l<=u<=24 sanity (not needed for soundness): False
+PASS prior certificate file hash matches pinned sha256 (cert.json)
+PASS seed z equals the certified target read from the prior certificate (chain; prior cert must pass check_cert.py) prior target = 22295934693/10000000000
+PASS chain consistency: same rows, thresholds, f, S, t, node_rates as prior certificate
+PASS (A.1) witness s: s^251 < H252(251/22)
+PASS (A.1) witness v: v^640 < H641(640/D)
+PASS (A.1) witness p,q: p^137 q^6 < H144(137x+6y)
+PASS (A.1) witness p,q: p^9 q^718/U0^3 < H182(3R0+178y)
+PASS node_rates: all five (eta_b, B_b) equal exact recomputation from Appendix C tables and Table 2 floors
+PASS node_rates: exactly b in {144,182,183,252,641}, all eta_b, B_b > 0
+PASS positivity hypotheses: z > 1, s, v, p, q > 0, hence D, N, x, U0, R0 > 0
+PASS positivity hypotheses: t > 1, f > 0, S >= 1 integer
+P0 [[4779387036996128011315496849, 7625212886150510099750934216], [4479477793251763677129667051, 7158512982259945010965241605]]
+P1 [[4518416203904075662077116613, 7210243119909079552130638904], [4230807602391509216651230650, 6762461768517050600978662126]]
+P2 [[4755344837187753151375008087, 7586657615841813290310429297], [4457522169212184010272299089, 7123236118798964766945902448]]
+PASS P0 entries strictly positive (K0 strictly positive)
+PASS J <= rho(P0)  (2J <= a+d or p(J) <= 0)
+PASS rho(P0) < J+1 (2(J+1) > a+d and p(J+1) > 0)
+PASS tail P1 (K-): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.193318, rho(tail)/S<=1.127640 (float, informational)
+PASS tail P2 (K+): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.193318, rho(tail)/S<=1.187389 (float, informational)
+PASS Lambda >= f (J/S)^(1/DD) > target = 22295940182/10000000000 (2.229594018200)
+PASS target > seed
+INFO max certified u/1e14 grid value: 222959401829737/10^14 = 2.22959401829737; J = 11933179369586057237990427667
+RESULT PASS
+PASS C1 0
+PASS word<->walk injectivity (real-bit projection injective)
+PASS 1350 triples/state (unordered) {1: 1125, 2: 1800}
+PASS 330 live rows both states
+PASS null score <=> blocking
+PASS score conservation
+PASS 18 types/162 heads
+PASS 468 head triples/state {1: 353, 2: 656}
+PASS thresholds (3.2) (47, 26)
+PASS l,u integers (0<=l<=u<=24 not required)
+PASS node_rates = exact recomputation from Lu App.C tables (rates.py) and Table 2
+PASS prices A.1 + positivity (z>1,s,v,p,q>0,t>1,f>0,S>=1,eta,B>0) [True, True, True, True]
+PASS rounding exact: P0<=exact
+PASS rounding exact: P1>=exact
+PASS rounding exact: P2>=exact
+PASS P0>0
+PASS J<=rho(P0)
+PASS tails<J [True, True]
+PASS final target
+J=11933179369586057237990427667
+RESULT PASS
+n 372 distinct True C1 violations 0 T1,T2 1125 1800 live 346 346 live equal True
+score violations 0 e in 0..2 True real-bit injective True
+types 18 heads 162
+head-type triples/state 353 656
+max sum u (s=1) 47 (need<=47)  min sum l (s=2) 26 (need>=25)
+prices True P0>0 True J 11933179369586057237990427667 floor ok True tails True True final True
+best grid 222959401829737 /1e14 = 2.22959401829737
+VERDICT PASS
+J 11933179369586057237990427667
+=== cert3
+PASS distinct 14-bit rows (N=372)
+PASS word<->walk injectivity: real-bit projection injective on rows
+PASS C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=0
+PASS state triples counted (1125, 1800)
+PASS live rows identical in both states 346
+PASS score is null exactly on the blocking rows
+PASS score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+PASS row/head types (18, 162)
+PASS thresholds: one integer per head type
+PASS state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=47
+PASS state 2: all head-type triples satisfy sum l >= 25 triples=656 extreme=26
+INFO head-type triples per state {1: 353, 2: 656}
+INFO 0<=l<=u<=24 sanity (not needed for soundness): False
+PASS prior certificate file hash matches pinned sha256 (cert2.json)
+PASS seed z equals the certified target read from the prior certificate (chain; prior cert must pass check_cert.py) prior target = 22295940182/10000000000
+PASS chain consistency: same rows, thresholds, f, S, t, node_rates as prior certificate
+PASS (A.1) witness s: s^251 < H252(251/22)
+PASS (A.1) witness v: v^640 < H641(640/D)
+PASS (A.1) witness p,q: p^137 q^6 < H144(137x+6y)
+PASS (A.1) witness p,q: p^9 q^718/U0^3 < H182(3R0+178y)
+PASS node_rates: all five (eta_b, B_b) equal exact recomputation from Appendix C tables and Table 2 floors
+PASS node_rates: exactly b in {144,182,183,252,641}, all eta_b, B_b > 0
+PASS positivity hypotheses: z > 1, s, v, p, q > 0, hence D, N, x, U0, R0 > 0
+PASS positivity hypotheses: t > 1, f > 0, S >= 1 integer
+P0 [[4779388697255733928419446642, 7625215529248676439084268649], [4479479366135393122210261614, 7158515490303213927186897537]]
+P1 [[4518417773280687817984366014, 7210245618808713053254242404], [4230809087745444628691583451, 6762464137461623181021949776]]
+P2 [[4755346489116131575962987613, 7586660245607920289709870946], [4457523734406168005879630500, 7123238614513614371955637891]]
+PASS P0 entries strictly positive (K0 strictly positive)
+PASS J <= rho(P0)  (2J <= a+d or p(J) <= 0)
+PASS rho(P0) < J+1 (2(J+1) > a+d and p(J+1) > 0)
+PASS tail P1 (K-): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.193318, rho(tail)/S<=1.127641 (float, informational)
+PASS tail P2 (K+): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.193318, rho(tail)/S<=1.187389 (float, informational)
+PASS Lambda >= f (J/S)^(1/DD) > target = 22295940190/10000000000 (2.229594019000)
+PASS target > seed
+INFO max certified u/1e14 grid value: 222959401907588/10^14 = 2.22959401907588; J = 11933183536300271511424043106
+RESULT PASS
+PASS C1 0
+PASS word<->walk injectivity (real-bit projection injective)
+PASS 1350 triples/state (unordered) {1: 1125, 2: 1800}
+PASS 330 live rows both states
+PASS null score <=> blocking
+PASS score conservation
+PASS 18 types/162 heads
+PASS 468 head triples/state {1: 353, 2: 656}
+PASS thresholds (3.2) (47, 26)
+PASS l,u integers (0<=l<=u<=24 not required)
+PASS node_rates = exact recomputation from Lu App.C tables (rates.py) and Table 2
+PASS prices A.1 + positivity (z>1,s,v,p,q>0,t>1,f>0,S>=1,eta,B>0) [True, True, True, True]
+PASS rounding exact: P0<=exact
+PASS rounding exact: P1>=exact
+PASS rounding exact: P2>=exact
+PASS P0>0
+PASS J<=rho(P0)
+PASS tails<J [True, True]
+PASS final target
+J=11933183536300271511424043106
+RESULT PASS
+n 372 distinct True C1 violations 0 T1,T2 1125 1800 live 346 346 live equal True
+score violations 0 e in 0..2 True real-bit injective True
+types 18 heads 162
+head-type triples/state 353 656
+max sum u (s=1) 47 (need<=47)  min sum l (s=2) 26 (need>=25)
+prices True P0>0 True J 11933183536300271511424043106 floor ok True tails True True final True
+best grid 222959401907588 /1e14 = 2.22959401907588
+VERDICT PASS
+J 11933183536300271511424043106
+GROUP cert DONE

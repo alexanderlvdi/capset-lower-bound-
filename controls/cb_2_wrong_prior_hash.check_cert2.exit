@@ -1,0 +1,1 @@
+cb_2_wrong_prior_hash.json	check_cert2.py	REJECTED	FAIL prior certificate file hash matches pinned sha256 (cb_1.json)

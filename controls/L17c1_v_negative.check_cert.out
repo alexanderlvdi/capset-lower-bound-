@@ -1,0 +1,17 @@
+PASS distinct 14-bit rows (N=372)
+PASS word<->walk injectivity: real-bit projection injective on rows
+PASS C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=0
+PASS state triples counted (1125, 1800)
+PASS live rows identical in both states 346
+PASS score is null exactly on the blocking rows
+PASS score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+PASS row/head types (18, 162)
+PASS thresholds: one integer per head type
+PASS state 1: all head-type triples satisfy sum u <= 59 triples=353 extreme=58
+PASS state 2: all head-type triples satisfy sum l >= 31 triples=656 extreme=32
+INFO head-type triples per state {1: 353, 2: 656}
+INFO 0<=l<=u<=24 sanity (not needed for soundness): True
+PASS seed z is Lu Thm 1.1 bound 2.229206468135675727981404 (an input from Lu, not proved here)
+PASS (A.1) witness s: s^251 < H252(251/22)
+PASS (A.1) witness v: v^640 < H641(640/D)
+FAIL (A.1) witness p,q: p^137 q^6 < H144(137x+6y)

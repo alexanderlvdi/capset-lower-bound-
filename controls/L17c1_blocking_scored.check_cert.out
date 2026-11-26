@@ -1,0 +1,6 @@
+PASS distinct 14-bit rows (N=372)
+PASS word<->walk injectivity: real-bit projection injective on rows
+PASS C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=0
+PASS state triples counted (1125, 1800)
+PASS live rows identical in both states 346
+FAIL score is null exactly on the blocking rows

@@ -1,0 +1,3 @@
+PASS distinct 14-bit rows (N=373)
+PASS word<->walk injectivity: real-bit projection injective on rows
+FAIL C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=67

@@ -1,0 +1,2 @@
+PASS distinct 14-bit rows (N=373)
+FAIL word<->walk injectivity: real-bit projection injective on rows

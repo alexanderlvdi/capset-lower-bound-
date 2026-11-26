@@ -1,0 +1,10 @@
+PASS distinct 14-bit rows (N=372)
+PASS word<->walk injectivity: real-bit projection injective on rows
+PASS C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=0
+PASS state triples counted (1125, 1800)
+PASS live rows identical in both states 346
+PASS score is null exactly on the blocking rows
+PASS score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+PASS row/head types (18, 162)
+PASS thresholds: one integer per head type
+FAIL state 1: all head-type triples satisfy sum u <= 59 triples=353 extreme=62

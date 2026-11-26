@@ -1,0 +1,31 @@
+PASS distinct 14-bit rows (N=372)
+PASS word<->walk injectivity: real-bit projection injective on rows
+PASS C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=0
+PASS state triples counted (1125, 1800)
+PASS live rows identical in both states 346
+PASS score is null exactly on the blocking rows
+PASS score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+PASS row/head types (18, 162)
+PASS thresholds: one integer per head type
+PASS state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=46
+PASS state 2: all head-type triples satisfy sum l >= 25 triples=656 extreme=25
+INFO head-type triples per state {1: 353, 2: 656}
+INFO 0<=l<=u<=24 sanity (not needed for soundness): False
+PASS seed z is Lu Thm 1.1 bound 2.229206468135675727981404 (an input from Lu, not proved here)
+PASS (A.1) witness s: s^251 < H252(251/22)
+PASS (A.1) witness v: v^640 < H641(640/D)
+PASS (A.1) witness p,q: p^137 q^6 < H144(137x+6y)
+PASS (A.1) witness p,q: p^9 q^718/U0^3 < H182(3R0+178y)
+PASS node_rates: all five (eta_b, B_b) equal exact recomputation from Appendix C tables and Table 2 floors
+PASS node_rates: exactly b in {144,182,183,252,641}, all eta_b, B_b > 0
+PASS positivity hypotheses: z > 1, s, v, p, q > 0, hence D, N, x, U0, R0 > 0
+PASS positivity hypotheses: t > 1, f > 0, S >= 1 integer
+P0 [[4849182380591913012850120660, 7671762217279376292058884342], [4556113489812995884063897974, 7222852688693776894683721607]]
+P1 [[4584561955924880527579787692, 7254506265541297304638458088], [4303483821482274103722738306, 6823659487260437531460015520]]
+P2 [[4824766191272105789602492895, 7632936566256470369042049702], [4533740450710924615731717047, 7187199572272391118882225062]]
+PASS P0 entries strictly positive (K0 strictly positive)
+PASS J <= rho(P0)  (2J <= a+d or p(J) <= 0)
+PASS rho(P0) < J+1 (2(J+1) > a+d and p(J+1) > 0)
+PASS tail P1 (K-): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.206611, rho(tail)/S<=1.140262 (float, informational)
+PASS tail P2 (K+): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.206611, rho(tail)/S<=1.200607 (float, informational)
+FAIL Lambda >= f (J/S)^(1/DD) > target = 891847887/400000000 (2.229619717500)

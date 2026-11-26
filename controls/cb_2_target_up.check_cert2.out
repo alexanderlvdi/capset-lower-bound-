@@ -1,0 +1,33 @@
+PASS distinct 14-bit rows (N=372)
+PASS word<->walk injectivity: real-bit projection injective on rows
+PASS C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=0
+PASS state triples counted (1125, 1800)
+PASS live rows identical in both states 346
+PASS score is null exactly on the blocking rows
+PASS score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+PASS row/head types (18, 162)
+PASS thresholds: one integer per head type
+PASS state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=46
+PASS state 2: all head-type triples satisfy sum l >= 25 triples=656 extreme=25
+INFO head-type triples per state {1: 353, 2: 656}
+INFO 0<=l<=u<=24 sanity (not needed for soundness): False
+PASS prior certificate file hash matches pinned sha256 (cb_1.json)
+PASS seed z equals the certified target read from the prior certificate (chain; prior cert must pass check_cert.py) prior target = 22296193019/10000000000
+PASS chain consistency: same rows, thresholds, f, S, t, node_rates as prior certificate
+PASS (A.1) witness s: s^251 < H252(251/22)
+PASS (A.1) witness v: v^640 < H641(640/D)
+PASS (A.1) witness p,q: p^137 q^6 < H144(137x+6y)
+PASS (A.1) witness p,q: p^9 q^718/U0^3 < H182(3R0+178y)
+PASS node_rates: all five (eta_b, B_b) equal exact recomputation from Appendix C tables and Table 2 floors
+PASS node_rates: exactly b in {144,182,183,252,641}, all eta_b, B_b > 0
+PASS positivity hypotheses: z > 1, s, v, p, q > 0, hence D, N, x, U0, R0 > 0
+PASS positivity hypotheses: t > 1, f > 0, S >= 1 integer
+P0 [[4850449072959576171560243104, 7673761897271205263915012091], [4557316044213939349073814502, 7224755064874334362154311649]]
+P1 [[4585759351933782125798621714, 7256396914757696685164665884], [4304619531505025040530073070, 6825456464013799631468900925]]
+P2 [[4826026521280764109140654536, 7634926150420872568164708367], [4534937115054059307441281435, 7189092581685580852053972600]]
+PASS P0 entries strictly positive (K0 strictly positive)
+PASS J <= rho(P0)  (2J <= a+d or p(J) <= 0)
+PASS rho(P0) < J+1 (2(J+1) > a+d and p(J+1) > 0)
+PASS tail P1 (K-): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.206928, rho(tail)/S<=1.140562 (float, informational)
+PASS tail P2 (K+): J > max(u,x) and (J-u)(J-x) > vw  (rho(tail) < J <= rho(P0)) J/S=1.206928, rho(tail)/S<=1.200922 (float, informational)
+FAIL Lambda >= f (J/S)^(1/DD) > target = 5574050757/2500000000 (2.229620302800)

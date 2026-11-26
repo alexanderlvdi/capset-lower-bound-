@@ -1,0 +1,96 @@
+L17c1_score_tamper.json check_cert.py REJECTED FAIL score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+L17c1_flip_bit.json check_cert.py REJECTED FAIL C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=63
+L17c1_injectivity.json check_cert.py REJECTED FAIL word<->walk injectivity: real-bit projection injective on rows
+L17c1_subset_row.json check_cert.py REJECTED FAIL C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=67
+L17c1_u_plus1.json check_cert.py REJECTED FAIL state 1: all head-type triples satisfy sum u <= 59 triples=353 extreme=61
+L17c1_blocking_scored.json check_cert.py REJECTED FAIL score is null exactly on the blocking rows
+L17c1_live_blocked.json check_cert.py REJECTED FAIL score is null exactly on the blocking rows
+L17c1_perturbed_p.json check_cert.py REJECTED FAIL (A.1) witness p,q: p^137 q^6 < H144(137x+6y)
+L17c1_l_minus1.json check_cert.py REJECTED FAIL state 2: all head-type triples satisfy sum l >= 31 triples=656 extreme=29
+L17c1_L_changed.json check_cert.py REJECTED FAIL state 1: all head-type triples satisfy sum u <= 55 triples=353 extreme=58
+L17c1_node_rate_eta183.json check_cert.py REJECTED FAIL node_rates: all five (eta_b, B_b) equal exact recomputation from Appendix C tables and Table 2 floors
+L17c1_target_up.json check_cert.py REJECTED FAIL Lambda >= f (J/S)^(1/DD) > target = 4459272351/2000000000 (2.229636175500)
+L17c1_single_u_up.json check_cert.py REJECTED FAIL state 1: all head-type triples satisfy sum u <= 59 triples=353 extreme=62
+cb_0_u_plus1.json check_cert.py REJECTED FAIL state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=49
+L17c1_t_eq_1.json check_cert.py REJECTED FAIL positivity hypotheses: t > 1, f > 0, S >= 1 integer
+L17c1_f_negative.json check_cert.py REJECTED FAIL positivity hypotheses: t > 1, f > 0, S >= 1 integer
+cb_0_score_tamper.json check_cert.py REJECTED FAIL score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+L17c1_v_negative.json check_cert.py REJECTED FAIL (A.1) witness p,q: p^137 q^6 < H144(137x+6y)
+cert4_u_plus1.json check_cert.py REJECTED FAIL state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=49
+L17c1_single_l_down.json check_cert.py REJECTED FAIL state 2: all head-type triples satisfy sum l >= 31 triples=656 extreme=30
+cert_u_plus1.json check_cert.py REJECTED FAIL state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=50
+cb_0_l_minus1.json check_cert.py REJECTED FAIL state 2: all head-type triples satisfy sum l >= 25 triples=656 extreme=22
+L17c3_u_plus1.json check_cert2.py REJECTED FAIL state 1: all head-type triples satisfy sum u <= 59 triples=353 extreme=61
+cb_0_node_rate_eta183.json check_cert.py REJECTED FAIL node_rates: all five (eta_b, B_b) equal exact recomputation from Appendix C tables and Table 2 floors
+cb_0_target_up.json check_cert.py REJECTED FAIL Lambda >= f (J/S)^(1/DD) > target = 891847887/400000000 (2.229619717500)
+cert4_target_up.json check_cert.py REJECTED FAIL Lambda >= f (J/S)^(1/DD) > target = 22295970073/10000000000 (2.229597007300)
+L17c3_wrong_prior_hash.json check_cert2.py REJECTED FAIL prior certificate file hash matches pinned sha256 (L17c2.json)
+cert_target_up.json check_cert.py REJECTED FAIL Lambda >= f (J/S)^(1/DD) > target = 22295944693/10000000000 (2.229594469300)
+L17c3_target_up.json check_cert2.py REJECTED FAIL Lambda >= f (J/S)^(1/DD) > target = 22296367841/10000000000 (2.229636784100)
+L17c3_wrong_seed.json check_cert2.py REJECTED FAIL seed z equals the certified target read from the prior certificate (chain; prior cert must pass check_cert.py) prior target = 2.2296357832
+L17c3_chain_inconsistent.json check_cert2.py REJECTED FAIL chain consistency: same rows, thresholds, f, S, t, node_rates as prior certificate
+cb_2_wrong_prior_hash.json check_cert2.py REJECTED FAIL prior certificate file hash matches pinned sha256 (cb_1.json)
+cb_2_target_up.json check_cert2.py REJECTED FAIL Lambda >= f (J/S)^(1/DD) > target = 5574050757/2500000000 (2.229620302800)
+cert4b_wrong_prior_hash.json check_cert2.py REJECTED FAIL prior certificate file hash matches pinned sha256 (cert4.json)
+cert3_wrong_prior_hash.json check_cert2.py REJECTED FAIL prior certificate file hash matches pinned sha256 (cert2.json)
+L17c1_injectivity.json independent_check2.py CRASH 
+cert4b_target_up.json check_cert2.py REJECTED FAIL Lambda >= f (J/S)^(1/DD) > target = 2229597559/1000000000 (2.229597559000)
+L17c1_subset_row.json independent_check2.py CRASH 
+L17c1_flip_bit.json independent_check2.py CRASH 
+cert3_target_up.json check_cert2.py REJECTED FAIL Lambda >= f (J/S)^(1/DD) > target = 2229595019/1000000000 (2.229595019000)
+L17c1_score_tamper.json independent_check2.py CRASH 
+L17c1_u_plus1.json independent_check2.py REJECTED VERDICT FAIL
+L17c1_l_minus1.json independent_check2.py REJECTED VERDICT FAIL
+L17c1_L_changed.json	check_cert.py	REJECTED	FAIL state 1: all head-type triples satisfy sum u <= 55 triples=353 extreme=58
+L17c1_blocking_scored.json	check_cert.py	REJECTED	FAIL score is null exactly on the blocking rows
+L17c1_f_negative.json	check_cert.py	REJECTED	FAIL positivity hypotheses: t > 1, f > 0, S >= 1 integer
+L17c1_flip_bit.json	check_cert.py	REJECTED	FAIL C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=63
+L17c1_flip_bit.json	independent_check2.py	CRASH	
+L17c1_injectivity.json	check_cert.py	REJECTED	FAIL word<->walk injectivity: real-bit projection injective on rows
+L17c1_injectivity.json	independent_check2.py	CRASH	
+L17c1_l_minus1.json	check_cert.py	REJECTED	FAIL state 2: all head-type triples satisfy sum l >= 31 triples=656 extreme=29
+L17c1_l_minus1.json	independent_check2.py	REJECTED	VERDICT FAIL
+L17c1_live_blocked.json	check_cert.py	REJECTED	FAIL score is null exactly on the blocking rows
+L17c1_node_rate_eta183.json	check_cert.py	REJECTED	FAIL node_rates: all five (eta_b, B_b) equal exact recomputation from Appendix C tables and Table 2 floors
+L17c1_perturbed_p.json	check_cert.py	REJECTED	FAIL (A.1) witness p,q: p^137 q^6 < H144(137x+6y)
+L17c1_score_tamper.json	check_cert.py	REJECTED	FAIL score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+L17c1_score_tamper.json	independent_check2.py	CRASH	
+L17c1_single_l_down.json	check_cert.py	REJECTED	FAIL state 2: all head-type triples satisfy sum l >= 31 triples=656 extreme=30
+L17c1_single_u_up.json	check_cert.py	REJECTED	FAIL state 1: all head-type triples satisfy sum u <= 59 triples=353 extreme=62
+L17c1_subset_row.json	check_cert.py	REJECTED	FAIL C1: any 3 rows (rep. allowed), not all equal, have a coordinate with exactly two 1s violations=67
+L17c1_subset_row.json	independent_check2.py	CRASH	
+L17c1_t_eq_1.json	check_cert.py	REJECTED	FAIL positivity hypotheses: t > 1, f > 0, S >= 1 integer
+L17c1_target_up.json	check_cert.py	REJECTED	FAIL Lambda >= f (J/S)^(1/DD) > target = 4459272351/2000000000 (2.229636175500)
+L17c1_u_plus1.json	check_cert.py	REJECTED	FAIL state 1: all head-type triples satisfy sum u <= 59 triples=353 extreme=61
+L17c1_u_plus1.json	independent_check2.py	REJECTED	VERDICT FAIL
+L17c1_v_negative.json	check_cert.py	REJECTED	FAIL (A.1) witness p,q: p^137 q^6 < H144(137x+6y)
+L17c3_chain_inconsistent.json	check_cert2.py	REJECTED	FAIL chain consistency: same rows, thresholds, f, S, t, node_rates as prior certificate
+L17c3_target_up.json	check_cert2.py	REJECTED	FAIL Lambda >= f (J/S)^(1/DD) > target = 22296367841/10000000000 (2.229636784100)
+L17c3_u_plus1.json	check_cert2.py	REJECTED	FAIL state 1: all head-type triples satisfy sum u <= 59 triples=353 extreme=61
+L17c3_wrong_prior_hash.json	check_cert2.py	REJECTED	FAIL prior certificate file hash matches pinned sha256 (L17c2.json)
+L17c3_wrong_seed.json	check_cert2.py	REJECTED	FAIL seed z equals the certified target read from the prior certificate (chain; prior cert must pass check_cert.py) prior target = 2.2296357832
+cb_0_l_minus1.json	check_cert.py	REJECTED	FAIL state 2: all head-type triples satisfy sum l >= 25 triples=656 extreme=22
+cb_0_node_rate_eta183.json	check_cert.py	REJECTED	FAIL node_rates: all five (eta_b, B_b) equal exact recomputation from Appendix C tables and Table 2 floors
+cb_0_score_tamper.json	check_cert.py	REJECTED	FAIL score conservation e(a)+e(b)+e(c)=4 (s=1), 2 (s=2) on every triple, e in {0,1,2}
+cb_0_target_up.json	check_cert.py	REJECTED	FAIL Lambda >= f (J/S)^(1/DD) > target = 891847887/400000000 (2.229619717500)
+cb_0_u_plus1.json	check_cert.py	REJECTED	FAIL state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=49
+cb_2_target_up.json	check_cert2.py	REJECTED	FAIL Lambda >= f (J/S)^(1/DD) > target = 5574050757/2500000000 (2.229620302800)
+cb_2_wrong_prior_hash.json	check_cert2.py	REJECTED	FAIL prior certificate file hash matches pinned sha256 (cb_1.json)
+cert3_target_up.json	check_cert2.py	REJECTED	FAIL Lambda >= f (J/S)^(1/DD) > target = 2229595019/1000000000 (2.229595019000)
+cert3_wrong_prior_hash.json	check_cert2.py	REJECTED	FAIL prior certificate file hash matches pinned sha256 (cert2.json)
+cert4_target_up.json	check_cert.py	REJECTED	FAIL Lambda >= f (J/S)^(1/DD) > target = 22295970073/10000000000 (2.229597007300)
+cert4_u_plus1.json	check_cert.py	REJECTED	FAIL state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=49
+cert4b_target_up.json	check_cert2.py	REJECTED	FAIL Lambda >= f (J/S)^(1/DD) > target = 2229597559/1000000000 (2.229597559000)
+cert4b_wrong_prior_hash.json	check_cert2.py	REJECTED	FAIL prior certificate file hash matches pinned sha256 (cert4.json)
+cert_target_up.json	check_cert.py	REJECTED	FAIL Lambda >= f (J/S)^(1/DD) > target = 22295944693/10000000000 (2.229594469300)
+cert_u_plus1.json	check_cert.py	REJECTED	FAIL state 1: all head-type triples satisfy sum u <= 47 triples=353 extreme=50
+
+controls not REJECTED:
+L17c1_flip_bit.json	independent_check2.py	CRASH	
+L17c1_injectivity.json	independent_check2.py	CRASH	
+L17c1_score_tamper.json	independent_check2.py	CRASH	
+L17c1_subset_row.json	independent_check2.py	CRASH	
+
+real	81m36.496s
+user	29m21.036s
+sys	0m4.250s

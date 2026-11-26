@@ -1,0 +1,43 @@
+L17c1_u_plus1.json	check_cert.py	all upper thresholds +1
+L17c1_l_minus1.json	check_cert.py	all lower thresholds -1
+L17c1_perturbed_p.json	check_cert.py	price witness p + 1e-4 relative
+L17c1_target_up.json	check_cert.py	target + 1e-6 (above the certified value)
+L17c1_node_rate_eta183.json	check_cert.py	eta_183 * 1.0001 (referee mutation)
+L17c1_score_tamper.json	check_cert.py	one live row: score 1 -> 2
+L17c1_flip_bit.json	check_cert.py	bit 3 of one live row flipped
+L17c1_injectivity.json	check_cert.py	added row with the same 12 real bits and swapped port bits
+L17c1_subset_row.json	check_cert.py	added row that is a subset of an existing row (violates the witness property)
+L17c1_blocking_scored.json	check_cert.py	a blocking row given a score
+L17c1_live_blocked.json	check_cert.py	a live row marked blocking (score null)
+L17c1_t_eq_1.json	check_cert.py	t = 1
+L17c1_f_negative.json	check_cert.py	f < 0
+L17c1_v_negative.json	check_cert.py	v -> -v
+L17c1_L_changed.json	check_cert.py	L lowered by 1 with the same thresholds
+L17c1_single_u_up.json	check_cert.py	single head 0 on the extreme triple: upper + 2 (smallest increase violating (3.1))
+L17c1_single_l_down.json	check_cert.py	single head 0 on the extreme triple: lower - 2 (smallest decrease violating (3.1))
+cb_0_u_plus1.json	check_cert.py	all upper thresholds +1
+cb_0_l_minus1.json	check_cert.py	all lower thresholds -1
+cb_0_target_up.json	check_cert.py	target + 1e-6 (above the certified value)
+cb_0_node_rate_eta183.json	check_cert.py	eta_183 * 1.0001 (referee mutation)
+cb_0_score_tamper.json	check_cert.py	one live row: score 1 -> 2
+cert4_u_plus1.json	check_cert.py	all upper thresholds +1
+cert4_target_up.json	check_cert.py	target + 1e-6 (above the certified value)
+cert_u_plus1.json	check_cert.py	all upper thresholds +1
+cert_target_up.json	check_cert.py	target + 1e-6 (above the certified value)
+L17c3_u_plus1.json	check_cert2.py	all upper thresholds +1
+L17c3_target_up.json	check_cert2.py	target + 1e-6
+L17c3_wrong_prior_hash.json	check_cert2.py	prior_cert_sha256 = 0...0
+L17c3_wrong_seed.json	check_cert2.py	seed z changed in the last digit
+L17c3_chain_inconsistent.json	check_cert2.py	upper[0] - 1 (sound, but differs from the pinned prior certificate)
+cb_2_target_up.json	check_cert2.py	target + 1e-6
+cb_2_wrong_prior_hash.json	check_cert2.py	prior_cert_sha256 = 0...0
+cert4b_target_up.json	check_cert2.py	target + 1e-6
+cert4b_wrong_prior_hash.json	check_cert2.py	prior_cert_sha256 = 0...0
+cert3_target_up.json	check_cert2.py	target + 1e-6
+cert3_wrong_prior_hash.json	check_cert2.py	prior_cert_sha256 = 0...0
+L17c1_u_plus1.json	independent_check2.py	same file, referee checker (independent_check2.py)
+L17c1_l_minus1.json	independent_check2.py	same file, referee checker (independent_check2.py)
+L17c1_score_tamper.json	independent_check2.py	same file, referee checker (independent_check2.py)
+L17c1_injectivity.json	independent_check2.py	same file, referee checker (independent_check2.py)
+L17c1_subset_row.json	independent_check2.py	same file, referee checker (independent_check2.py)
+L17c1_flip_bit.json	independent_check2.py	same file, referee checker (independent_check2.py)

@@ -1,0 +1,19 @@
+n 372 distinct True C1 violations 0 T1,T2 1125 1800 live 346 346 live equal True
+score violations 24 e in 0..2 True real-bit injective True
+types 19 heads 180
+head-type triples/state 521 890
+Traceback (most recent call last):
+  File "/home/claude/release2/controls/../verify/independent_check2.py", line 252, in <module>
+    res = full(cert)
+  File "/home/claude/release2/controls/../verify/independent_check2.py", line 219, in full
+    u1, l2 = check_thresholds(hts, upper, lower)
+             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/release2/controls/../verify/independent_check2.py", line 97, in check_thresholds
+    u1 = max(sum(upper[h] for h in t) for t in hts[1])
+  File "/home/claude/release2/controls/../verify/independent_check2.py", line 97, in <genexpr>
+    u1 = max(sum(upper[h] for h in t) for t in hts[1])
+             ~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/release2/controls/../verify/independent_check2.py", line 97, in <genexpr>
+    u1 = max(sum(upper[h] for h in t) for t in hts[1])
+                 ~~~~~^^^
+IndexError: list index out of range

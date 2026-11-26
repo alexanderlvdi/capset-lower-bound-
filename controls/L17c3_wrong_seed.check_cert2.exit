@@ -1,0 +1,1 @@
+L17c3_wrong_seed.json	check_cert2.py	REJECTED	FAIL seed z equals the certified target read from the prior certificate (chain; prior cert must pass check_cert.py) prior target = 2.2296357832

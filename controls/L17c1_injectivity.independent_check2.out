@@ -1,0 +1,15 @@
+n 373 distinct True C1 violations 50 T1,T2 1126 1801 live 348 348 live equal True
+score violations 2000002 e in 0..2 True real-bit injective False
+types 18 heads 162
+Traceback (most recent call last):
+  File "/home/claude/release2/controls/../verify/independent_check2.py", line 252, in <module>
+    res = full(cert)
+  File "/home/claude/release2/controls/../verify/independent_check2.py", line 217, in full
+    hts = head_triples(fam, xt, H)
+  File "/home/claude/release2/controls/../verify/independent_check2.py", line 92, in head_triples
+    hts.add(tuple(sorted(H[(xt[p0[w]], xt[p1[w]])] for w in range(3))))
+                  ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/release2/controls/../verify/independent_check2.py", line 92, in <genexpr>
+    hts.add(tuple(sorted(H[(xt[p0[w]], xt[p1[w]])] for w in range(3))))
+                                       ~~^^^^^^^
+KeyError: 510

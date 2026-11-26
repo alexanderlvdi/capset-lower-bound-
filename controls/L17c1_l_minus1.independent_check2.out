@@ -1,0 +1,9 @@
+n 372 distinct True C1 violations 0 T1,T2 1125 1800 live 346 346 live equal True
+score violations 0 e in 0..2 True real-bit injective True
+types 18 heads 162
+head-type triples/state 353 656
+max sum u (s=1) 58 (need<=59)  min sum l (s=2) 29 (need>=31)
+prices True P0>0 True J 12678968535999539658924507151 floor ok True tails True True final True
+best grid 222963517554093 /1e14 = 2.22963517554093
+VERDICT FAIL
+J 12678968535999539658924507151
