@@ -33,7 +33,7 @@ Python 3 (tested 3.13), no network. Only `independent_check.py` needs numpy (`ve
 
 Run times are in `controls/RESULTS.md` and `verify_run.out`. Negative controls: 43 altered certificates, all rejected (`controls/RESULTS.md`); `run_controls.sh` stops the check_cert*.py runs at their first FAIL line.
 
-## What is and is not checked
+## Scope of verification
 Checked from the raw data in exact arithmetic: the witness property of the 372 rows, the compatible-triple structure, conservation of the score, injectivity of the real-bit projection, the window condition (4.1) of the note, Lu's price inequalities at each seed, the integer matrices and spectral comparisons, the final bound, the SHA-256 chain, and the node rates (recomputed from Lu's tables).
 
 Taken from Lu and not re-derived: Lemma 5.1/Appendix C (the probabilistic construction and the two rule tables), Proposition 5.2/Appendix B, Proposition 2.3, Theorem 4.1, the rounding argument A.5, and, for the headline chain, the validity of his construction at walk length L = 17 instead of 14 (the note gives the general-L proof of port-state conservation; the rest is argued to have no L-specific step). A reader who wants to stay inside Lu's stated L = 14 setting should use the `cb_*` chain (> 2.2296193028). None of Lu's code was run.
